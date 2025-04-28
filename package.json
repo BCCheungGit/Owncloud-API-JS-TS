@@ -1,0 +1,32 @@
+{
+  "name": "owncloud-api-js-ts",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "dev": "tsup src/test.ts --format esm",
+    "build": "tsup src/index.ts --format esm,cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BCCheungGit/Owncloud-API-JS-TS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BCCheungGit/Owncloud-API-JS-TS/issues"
+  },
+  "homepage": "https://github.com/BCCheungGit/Owncloud-API-JS-TS#readme",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "tsup": "^8.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "eslint": "^9.25.1",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
