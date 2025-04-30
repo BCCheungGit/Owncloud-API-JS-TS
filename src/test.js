@@ -7,10 +7,11 @@ const client = new OwnCloudClient({
 });
 (async () => {
     try {
-        await client.createFolder('test-folder');
-        console.log('Folder created successfully');
+        // await client.createFolder('test-folder');
+        const res = await client.listFiles('visitorImages');
+        console.log('Files in visitorImages:', res);
     }
     catch (error) {
-        console.error('Error creating folder:', error);
+        console.error('Error running test: ', error);
     }
 })();
